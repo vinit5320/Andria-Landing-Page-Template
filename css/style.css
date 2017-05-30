@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.header {
+    background-image: linear-gradient(131deg, #080E7B 0%, #A23AFF 100%);
+    min-height: 100%;
+}
+
+.section2 {
+    background: #fff;
+    min-height: 100%;
+}
+
+.section3 {
+    background: #eceef1;
+    min-height: 100%;
+}
+
+.section4 {
+    background-image: linear-gradient(131deg, #FE6F65 0%, #4E0F7C 100%);
+    min-height: 100%;
+}
+
+.section5 {
+    background: #fff;
+    min-height: 45%;
+}
+
+.section6 {
+    background: #eceef1;
+    min-height: 100%;
+}
+
+.section7 {
+    background: #fff;
+    min-height: 45%;
+}
+
+.footer {
+    background: #D8D8D8;
+    background-image: linear-gradient(-135deg, #BACCE7 0%, #96ADCD 100%);
+    min-height: 50%;
+}
