@@ -1,9 +1,10 @@
 html, body {
     height: 100%;
     margin: 0;
+    font-family: 'Questrial', sans-serif;
 }
 
-/* --- Section 1 --- */
+/* --- Header --- */
 
 .header {
     background-image: linear-gradient(131deg, #080E7B 0%, #A23AFF 100%);
@@ -11,7 +12,6 @@ html, body {
 }
 
 .menu {
-    font-family: 'Questrial', sans-serif;
     font-size: 17px;
     color: #FFFFFF;
     width: 100%;
@@ -22,7 +22,6 @@ html, body {
 .menu-icon {
     width: 15%;
     text-align: center;
-    height:25px;
 }
 
 .menu-label {
@@ -47,15 +46,37 @@ html, body {
     background: #fff;
     border-radius: 35px;
     transition: transform .2s;
-    -webkit-filter: blur(radius);
 }
 
 .menu-download:hover {
     transform: scale(1.04);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15), 0 10px 20px 0 rgba(0,0,0,0.15);
-    font-size: ;
     color: #612ac2;
 }
+
+.alert-bg {
+    margin: 50px auto;
+    width:50%;
+    height:30px;
+    background: rgba(0,0,0,0.25);
+    border-radius: 15px;
+}
+.alert-text {
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    top: 21%;
+    margin-left: 0.5%;
+}
+
+.alert-new-badge {
+    background-color: #26C3F9;
+    padding: 5px 5px 5px 5px;
+    border-radius: 15px;
+    font-size: 14px;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
 
 /* --- Section 2 --- */
 
