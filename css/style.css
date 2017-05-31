@@ -3,10 +3,61 @@ html, body {
     margin: 0;
 }
 
+/* --- Section 1 --- */
+
 .header {
     background-image: linear-gradient(131deg, #080E7B 0%, #A23AFF 100%);
     min-height: 100%;
 }
+
+.menu {
+    font-family: 'Questrial', sans-serif;
+    font-size: 17px;
+    color: #FFFFFF;
+    width: 100%;
+    padding-top: 2%;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.menu-icon {
+    width: 15%;
+    text-align: center;
+    height:25px;
+}
+
+.menu-label {
+    width: 15%;
+    text-align: center;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    line-height: 36px;
+}
+.menu-label:hover {
+    background: rgba(0,0,0,0.25);
+    border-radius: 8px;
+}
+
+.menu-download {
+    width: 13%;
+    color: #6B2AD0;
+    text-align: center;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    line-height: 36px;
+    background: #fff;
+    border-radius: 35px;
+    transition: transform .2s;
+    -webkit-filter: blur(radius);
+}
+
+.menu-download:hover {
+    transform: scale(1.04);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15), 0 10px 20px 0 rgba(0,0,0,0.15);
+    font-size: ;
+    color: #612ac2;
+}
+
+/* --- Section 2 --- */
 
 .section2 {
     background: #fff;
