@@ -4,6 +4,24 @@ html, body {
     font-family: 'Questrial', sans-serif;
 }
 
+/*Animation CSS3*/
+
+@keyframes present {
+    0% {
+        opacity:0;
+        -ms-transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px)
+    }
+
+    100% {
+        opacity:1;
+        -ms-transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px)
+    }
+}
+
 /* --- Header --- */
 
 .header {
@@ -60,6 +78,7 @@ html, body {
     height:30px;
     background: rgba(0,0,0,0.25);
     border-radius: 15px;
+    -webkit-animation: present 3s;
 }
 .alert-text {
     color: #fff;
@@ -70,11 +89,50 @@ html, body {
 }
 
 .alert-new-badge {
+    color: #fff;
     background-color: #26C3F9;
     padding: 5px 5px 5px 5px;
     border-radius: 15px;
     font-size: 14px;
+    float: left;
+    margin-top: 0.45%;
+    margin-left: 0.5%;
     -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.main-iphone {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+#phoneWrapper {
+    right:0;
+    height: 350px;
+    position: absolute;
+    z-index: 2;
+    -webkit-animation: present 4s;
+}
+
+.banner-text {
+    font-size: 65px;
+    font-weight:700;
+    -webkit-font-smoothing: subpixel-antialiased;
+    color: #ffffff;
+    width:20vh;
+    height: 40vh;
+    margin-left:10%;
+    margin-top:10%;
+    -webkit-animation: present 3.5s;
+}
+
+.banner-description {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100 !important;
+    position: absolute;
+    width: 50vh;
 }
 
 
