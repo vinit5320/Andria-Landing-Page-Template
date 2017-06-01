@@ -265,10 +265,65 @@ h1 {
     min-height: 100%;
 }
 
+/*--- Section 7 ---*/
+
 .section7 {
     background: #fff;
-    min-height: 45%;
+    height: 45%;
+    min-height: 200px;
 }
+
+.more-info {
+    height:100%;
+    margin: 0 auto;
+}
+
+.side-icon {
+     width: 25%;
+    margin-left: 8.33333%;
+}
+.side-text {
+    width: 50%;
+}
+
+.column {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    float: left;
+    min-height: 2px;
+}
+
+.more-info-headline {
+    font-size: 32px;
+    line-height: 1.09375;
+    font-weight: 500;
+    letter-spacing: .011em;
+    font-family: "Raleway", sans-serif;
+}
+
+.apple-music-icon {
+    width: 72px;
+    height: 72px;
+    background-size: 72px 72px;
+    background-repeat: no-repeat;
+    background-image: url(https://images.apple.com/v/music/e/images/overview/icons/itunes_icon_large.png);
+    margin-left: auto;
+    margin-right: 32px;
+    margin-top: 10%;
+    display: block;
+}
+
+.more {
+    color: #333;
+    display: block;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
 
 .footer {
     background: #D8D8D8;
