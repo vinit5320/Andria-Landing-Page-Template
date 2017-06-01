@@ -1,7 +1,12 @@
 html, body {
     height: 100%;
     margin: 0;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    height: 20px;
 }
 
 /*Animation CSS3*/
@@ -22,15 +27,23 @@ html, body {
     }
 }
 
+@keyframes appear {
+    0% {  opacity:0;  }
+
+    100% {  opacity:1;  }
+}
+
 /* --- Header --- */
 
 .header {
     background-image: linear-gradient(131deg, #080E7B 0%, #A23AFF 100%);
-    min-height: 100%;
+    min-height: 620px;
+    height:100%;
 }
 
 .menu {
     font-size: 17px;
+    font-family: 'Questrial', sans-serif;
     color: #FFFFFF;
     width: 100%;
     padding-top: 2%;
@@ -86,6 +99,7 @@ html, body {
     position: relative;
     top: 21%;
     margin-left: 0.5%;
+    font-family: 'Questrial', sans-serif;
 }
 
 .alert-new-badge {
@@ -98,6 +112,7 @@ html, body {
     margin-top: 0.45%;
     margin-left: 0.5%;
     -webkit-font-smoothing: subpixel-antialiased;
+    font-family: 'Questrial', sans-serif;
 }
 
 .main-iphone {
@@ -111,28 +126,30 @@ html, body {
     height: 350px;
     position: absolute;
     z-index: 2;
-    -webkit-animation: present 4s;
+    -webkit-animation: present 3.2s;
 }
 
 .banner-text {
     font-size: 65px;
+    font-family: 'Raleway', sans-serif;
     font-weight:700;
+    letter-spacing: 7px;
     -webkit-font-smoothing: subpixel-antialiased;
     color: #ffffff;
     width:20vh;
     height: 40vh;
     margin-left:10%;
     margin-top:10%;
-    -webkit-animation: present 3.5s;
+    -webkit-animation: present 3.2s;
 }
 
 .banner-description {
     font-size: 16px;
-    font-family: 'Raleway', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: 100 !important;
+    letter-spacing: 0px;
     position: absolute;
-    width: 50vh;
+    width: 40vw;
 }
 
 
@@ -142,6 +159,91 @@ html, body {
     background: #fff;
     min-height: 100%;
 }
+
+.about-app {
+    text-align: center;
+    width:50%;
+    margin: 8% auto;
+    color: #4A5572;
+}
+
+.about-description {
+    color: #5E718B;
+    letter-spacing: 0.7px;
+    font-size: 17px;
+}
+
+.about-detail {
+    color: #708096;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    line-height: 4vh;
+}
+
+.text-block-container {
+    justify-content: space-between;
+    position: relative;
+    margin-top: -6%;
+}
+
+.text-block-table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-block {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 50%;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+    min-height: 450px;
+    min-width: 300px;
+}
+
+.text-block-inside-container{
+    max-width: 490px;
+    margin: 95px auto 0;
+    box-sizing: inherit;
+}
+
+.block-img-div {
+    border: 0;
+    display: block;
+}
+
+.block-img {
+    height: 250px;
+    width: 250px;
+    box-shadow: 0 10px 20px 0 rgba(70,115,122,0.20);
+    border-radius: 8px;
+    transition: transform .2s;
+}
+
+.block-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px 0 rgba(70,115,122,0.50);
+    border-radius: 8px;
+}
+
+.block-title {
+    color: #47495a;
+    font-size: 19px;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1.21;
+    margin: 30px 0 20px;
+    white-space: nowrap;
+}
+
+.block-content {
+    color: #6b7c93;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 17px;
+    max-width: 385px;
+}
+
+
+/*--- Section 3 ---*/
 
 .section3 {
     background: #eceef1;

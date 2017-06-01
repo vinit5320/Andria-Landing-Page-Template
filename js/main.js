@@ -7,8 +7,6 @@
         didResizeWindow();
     }
 
-
-
     function didResizeWindow() {
 
         var windowHeight = window.innerHeight;
@@ -17,9 +15,10 @@
 
         $(window).resize(function() {
             windowHeight = window.innerHeight;
-            phoneNode.style.marginTop = (windowHeight - phoneNode.scrollHeight/2 - 300).toString() + 'px';
+            if(windowHeight > 700) {
+                phoneNode.style.marginTop = (windowHeight - phoneNode.scrollHeight / 2 - 300).toString() + 'px';
+            }
         });
     }
-
 
 })();
