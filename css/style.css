@@ -250,10 +250,41 @@ h1 {
     min-height: 100%;
 }
 
+/*--- Section 4 ---*/
+
 .section4 {
-    background-image: linear-gradient(131deg, #FE6F65 0%, #4E0F7C 100%);
+    background-image: linear-gradient(131deg, #4e0f7c 0%, #fe6f65 100%);
     min-height: 100%;
 }
+
+.dekstop-label {
+    padding-top: 1%;
+    padding-left: 10%;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    font-size:25px;
+}
+
+.andria-dekstop-wrapper {
+    position: relative;
+    padding-right:1.5%;
+    height: 80vh;
+    width: 100%;
+}
+
+#andria-desktop {
+    width: 60vw;
+    height: calc(60vw/1.75);
+    float:right;
+    margin-top: 0%;
+}
+
+.desktop-features-table {
+    float: left;
+}
+
+
+/*--- Section 5 ---*/
 
 .section5 {
     background: #fff;
@@ -270,12 +301,15 @@ h1 {
 .section7 {
     background: #fff;
     height: 45%;
-    min-height: 200px;
+    width: 100vw;
+    min-height: 250px;
+    display:table;
 }
 
 .more-info {
     height:100%;
-    margin: 0 auto;
+    display:table-cell;
+    vertical-align: middle;
 }
 
 .side-icon {
