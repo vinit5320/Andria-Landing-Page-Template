@@ -189,6 +189,7 @@ h1 {
 .text-block-table {
     width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .text-block {
@@ -267,7 +268,6 @@ h1 {
 
 .andria-dekstop-wrapper {
     position: relative;
-    padding-right:1.5%;
     height: 80vh;
     width: 100%;
 }
@@ -277,10 +277,55 @@ h1 {
     height: calc(60vw/1.75);
     float:right;
     margin-top: 0%;
+    z-index: 10;
+    position: relative;
 }
 
 .desktop-features-table {
     float: left;
+}
+
+.desktop-menu {
+    position: absolute;
+    top: 15%;
+    left: 75px;
+    width: 300px;
+    list-style: none;
+    z-index: 1;
+}
+
+.desktop-menu li {
+    list-style: none;
+}
+
+.desktop-menu li a {
+    font-size:20px;
+    padding: 20px 20px 20px 20px;
+    background-position: 12px 10px;
+    background-size: 48px;
+    color: #fff;
+    width: 300px;
+    display: block;
+    border: 0;
+    cursor: pointer!important;
+    border-radius: 3px;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+.desktop-menu li a:hover {
+    color: #000!important;
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.3),0 1px 3px 0 rgba(0,0,0,.3)!important;
+    cursor: pointer!important;
+}
+
+.desktop-menu li:after {
+    content: "";
+    display: block;
+    height: 1px;
+    margin: 0 -12% 0 13%;
+    background: rgba(255,255,255,0.3);
 }
 
 
