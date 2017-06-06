@@ -197,7 +197,7 @@ h1 {
     -webkit-flex: 0 1 50%;
     -ms-flex: 0 1 50%;
     flex: 0 1 50%;
-    min-height: 450px;
+    min-height: 350px;
     min-width: 300px;
 }
 
@@ -273,8 +273,8 @@ h1 {
 }
 
 #andria-desktop {
-    width: 60vw;
-    height: calc(60vw/1.75);
+    width: 55vw;
+    height: calc(55vw/1.75);
     float:right;
     margin-top: 0%;
     z-index: 10;
@@ -335,6 +335,19 @@ h1 {
     background: #fff;
     min-height: 45%;
 }
+
+.text-block-features {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.feature-text-block {
+    min-height: 350px;
+    min-width: 300px;
+    text-align: -webkit-center;
+}
+
+/*--- Section 6 ---*/
 
 .section6 {
     background: #eceef1;
