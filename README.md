@@ -40,14 +40,14 @@ App Template created by [Vinit Jasoliya](http://www.vinitjasoliya.in/)
 |   |
 |   └── Readme-demo.png
 │
-├── index.html
+├── index.html                               * Root index html page
 |
 ├── js/                                      * Basic Jquery Lib & Javascript with Documented Functions
 |   ├── main.js                              
 │   |
 |   └── jquery-2.2.4.min.js
 |
-├── css/                                     * Main CSS3 File with Keyframe Animations (Responsive Media Queries coming soon!)
+├── css/                                     * Main CSS3 File with Keyframe Animations
 |   └── style.css
 |
 ```
