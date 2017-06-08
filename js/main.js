@@ -1,3 +1,10 @@
+/**
+ * Created by IntelliJ IDEA.
+ * User: Vinit
+ * Date: 5/27/17
+ * Time: 09:47 AM
+ */
+
 (function () {
     'use strict';
     var main = window.main || (window.main = {});
