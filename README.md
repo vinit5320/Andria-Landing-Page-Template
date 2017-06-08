@@ -2,7 +2,7 @@
 
 Demo: [https://vinit5320.github.io/Andria-Landing-Page-Template/](https://vinit5320.github.io/Andria-Landing-Page-Template/)
 
-![Mockup demo](https://vinit5320.github.io/Andria-Landing-Page-Template/images/Readme-demo.png)
+![Andria Demo](/images/Readme-demo.png)
 
 App Template created by [Vinit Jasoliya](http://www.vinitjasoliya.in/)
 
