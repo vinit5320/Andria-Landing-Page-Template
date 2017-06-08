@@ -185,7 +185,7 @@ h1 {
 
 .section2 {
     background: #fff;
-    min-height: 700px;
+    min-height: 800px;
     height:100%;
 }
 
@@ -357,7 +357,7 @@ h1 {
 
 .section4 {
     background: #fff;
-    min-height: 315px;
+    min-height: 450px;
     height:45%;
 }
 
@@ -575,15 +575,29 @@ a:link, a:visited {
     padding: 0;
 }
 
-.pull-left {
+.stick-left {
     float: left;
+}
+
+.stick-right {
+    float: right;
 }
 
 .copyright {
     color: #000;
     font-size: 1rem;
+    margin: 5% 0 0 0;
+    padding: 0;
 }
 
-.pull-right {
-    float: right;
+.footer-menu {
+    margin: 5% 0 0 0;
+    padding: 0;
+    list-style: none;
+    color: #000;
+}
+
+.footer-menu li{
+    display: inline;
+    padding:0 0 0 5%;
 }

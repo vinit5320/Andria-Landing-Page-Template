@@ -9,9 +9,11 @@
     function initialize() {
 
         var phoneNode = document.getElementById('phoneWrapper');
-        phoneNode.style.marginTop = (window.innerHeight - phoneNode.scrollHeight/2 - 300).toString() + 'px';
+        var currentWindowHeight = window.innerHeight;
+        currentWindowHeight = (currentWindowHeight <= 700) ? 700 : currentWindowHeight;
+        phoneNode.style.marginTop = (currentWindowHeight - phoneNode.scrollHeight/2 - 300).toString() + 'px';
 
-        didResizeWindow(window, function(windowHeight) {
+        didResizeWindow(window, function(windowWidth, windowHeight) {
             if(windowHeight > 700) {
                 phoneNode.style.marginTop = (windowHeight - phoneNode.scrollHeight / 2 - 300).toString() + 'px';
             }
