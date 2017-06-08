@@ -41,21 +41,21 @@
         <table class="menu">
             <tr>
                 <td class="menu-icon">
-                    <img src="images/logo.svg" alt="Andria" height="50px">
+                    <a href="#"><img src="images/logo.svg" alt="Andria" height="50px"></a>
                 </td>
                 <td></td>
-                <td class="menu-label">
-                    <span class="">Home</span>
+                <td class="menu-label" onclick="main.scrollToId('about')">
+                    <span>About</span>
                 </td>
-                <td class="menu-label">
-                    <span class="">Features</span>
+                <td class="menu-label" onclick="main.scrollToId('desktop')">
+                    <span>Desktop</span>
                 </td>
-                <td class="menu-label">
-                    <span class="">Pricing</span>
+                <td class="menu-label" onclick="main.scrollToId('features')">
+                    <span>Features</span>
                 </td>
                 <td style="width:1%;"></td>
                 <td class="menu-download">
-                    <span class="">Download</span>
+                    <span></span>Download</span>
                 </td>
                 <td style="width:2%;"></td>
             </tr>
@@ -79,7 +79,7 @@
 
 </section>
 
-<section class="section2">
+<section id="about" class="section2">
     <div class="about-app">
         <h1>About Andria</h1>
         <p class="about-description"><span style="border-bottom: 1px solid #5E718B;">The best selling</span> music app
@@ -134,7 +134,7 @@
 
 </section>
 
-<section class="section3">
+<section id="desktop" class="section3">
     <div class="dekstop-label">
         <h1>Andria for Mac</h1>Coming Soon !
     </div>
@@ -148,7 +148,7 @@
     </div>
 </section>
 
-<section class="section4">
+<section id="features" class="section4">
     <div class="text-block-container">
         <table class="text-block-features">
             <tr>
@@ -212,7 +212,8 @@
 </section>
 
 <section class="footer">
-    <div class="footer-wrapper">
+
+    <div class="subscribe-wrapper">
         <div class="subscribe-form">
             <div class="subscribe-container">
                 <div class="form-div">
@@ -226,6 +227,34 @@
             </div>
         </div>
     </div>
+
+    <footer class="foot-wrapper">
+        <div class="base-wrapper">
+            <ul class="menu pull-left">
+                <li>
+                    <a target="_blank" href="/pricing">
+                        Pricing
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="/terms-and-conditions">
+                        Terms and Conditions
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tenory.com/privacy-policy" target="_blank">
+                        Privacy Policy
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tenory.com/contact" target="_blank">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright pull-right"> © 2017 Tenory Technologies </p>
+        </div>
+    </footer>
 </section>
 </body>
 </html>

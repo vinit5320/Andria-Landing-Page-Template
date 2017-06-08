@@ -65,7 +65,7 @@ h1 {
 
 .header {
     background-image: linear-gradient(131deg, #080E7B 0%, #A23AFF 100%);
-    min-height: 620px;
+    min-height: 700px;
     height:100%;
 }
 
@@ -185,7 +185,8 @@ h1 {
 
 .section2 {
     background: #fff;
-    min-height: 100%;
+    min-height: 700px;
+    height:100%;
 }
 
 .about-app {
@@ -275,7 +276,8 @@ h1 {
 
 .section3 {
     background-image: linear-gradient(131deg, #4e0f7c 0%, #fe6f65 100%);
-    min-height: 100%;
+    min-height: 700px;
+    height:100%;
 }
 
 .dekstop-label {
@@ -355,7 +357,8 @@ h1 {
 
 .section4 {
     background: #fff;
-    min-height: 45%;
+    min-height: 315px;
+    height:45%;
 }
 
 .text-block-features {
@@ -374,7 +377,8 @@ h1 {
 
 .section5 {
     background-image: linear-gradient(114deg,#50e3c2,#189fd0);
-    min-height: 100%;
+    min-height: 700px;
+    height:100%;
 }
 
 .img-wrap {
@@ -491,7 +495,7 @@ a:link, a:visited {
     height: 400px;
 }
 
-.footer-wrapper {
+.subscribe-wrapper {
     height: 295px;
     align-items: center;
     background-image: url(../images/footer.png);
@@ -548,7 +552,7 @@ a:link, a:visited {
     border: 0;
     line-height: inherit;
     width: 10%;
-    height: 62px;
+    height: 64px;
     float: left;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -556,4 +560,30 @@ a:link, a:visited {
     color: #fff;
     font-size: 13px;
     font-weight: 400;
+}
+
+.landing-wrap {
+    width: 100%;
+    padding: 7.5rem 2.3rem;
+    background-color: #202730;
+}
+
+.base-wrapper {
+    margin: 0 auto;
+    max-width: 1072px;
+    width: 100%;
+    padding: 0;
+}
+
+.pull-left {
+    float: left;
+}
+
+.copyright {
+    color: #000;
+    font-size: 1rem;
+}
+
+.pull-right {
+    float: right;
 }

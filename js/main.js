@@ -2,35 +2,74 @@
     'use strict';
     var main = window.main || (window.main = {});
     main.initialize = initialize;
+    main.didResizeWindow = didResizeWindow;
+    main.scrollToId = scrollToId;
+    main.animateOnAppear = animateOnAppear;
 
     function initialize() {
-        didResizeWindow();
-    }
 
-    function didResizeWindow() {
-
-        var windowHeight = window.innerHeight;
         var phoneNode = document.getElementById('phoneWrapper');
-        phoneNode.style.marginTop = (windowHeight - phoneNode.scrollHeight/2 - 300).toString() + 'px';
+        phoneNode.style.marginTop = (window.innerHeight - phoneNode.scrollHeight/2 - 300).toString() + 'px';
 
-        $(window).resize(function() {
-            windowHeight = window.innerHeight;
+        didResizeWindow(window, function(windowHeight) {
             if(windowHeight > 700) {
                 phoneNode.style.marginTop = (windowHeight - phoneNode.scrollHeight / 2 - 300).toString() + 'px';
             }
         });
+
+        animateOnAppear(window,".img-wrap", {
+            ".img-wrap": "animate-img",
+            ".text-wrap": "animate-text-wrap"
+            });
     }
 
-    $(window).scroll(function() {
-        var top_of_element = $(".img-wrap").offset().top;
-        var bottom_of_element = $(".img-wrap").offset().top + $(".img-wrap").outerHeight();
-        var bottom_of_screen = $(window).scrollTop() + $(window).height();
-        var top_of_screen = $(window).scrollTop();
-        if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-            $(".img-wrap").addClass("animate-img");
-            $(".text-wrap").addClass("animate-text-wrap");
+
+    /**
+     * Fired when user resize's the browser window
+     * @param {Window} win - The window object
+     * @param {function} callback - Callback function that is triggered when window did resize
+     */
+    function didResizeWindow(win, callback) {
+        $(win).resize(function() {
+            callback(win.innerWidth, win.innerHeight);
+        });
+    }
+
+
+    /**
+     * Scroll to ID of an element smoothly
+     * @param {string} id - The ID of the DOM Element to scroll to
+     */
+    function scrollToId(id) {
+        if(document.getElementById(id)) {
+            $('html, body').animate({
+                scrollTop: $('#' + id).offset().top
+            }, 500);
         }
-    });
+    }
+
+
+    /**
+     * Animate on appearing in the view port
+     * @param {Window} win - The window object
+     * @param {string} domElement - The Class Name of the DOM Element that needs to appear in the the viewport
+     * @param {JSON} animateElements - A JSON with {key} as the class of the element & {value} as the animating Class that need to be added to the element
+     */
+    function animateOnAppear(win, domElement, animateElements) {
+        $(win).scroll(function() {
+            var top_of_element = $(domElement).offset().top;
+            var bottom_of_element = $(domElement).offset().top + $(domElement).outerHeight();
+            var bottom_of_screen = $(window).scrollTop() + $(window).height();
+            var top_of_screen = $(window).scrollTop();
+            if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+                for(var key in animateElements){
+                    if(animateElements.hasOwnProperty(key)) {
+                        $(key).addClass(animateElements[key]);
+                    }
+                }
+            }
+        });
+    }
 
 
 })();
